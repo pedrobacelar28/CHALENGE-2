@@ -5,47 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Interactive card details form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="main-container">
+    
+    <div class="main-content">
+      <div class="left-container">
+        <div class="imagem-frente-container">
+          <img src="./images/bg-card-front.png" alt="Imagem Exemplo" class="posicionada">
+        </div>
+        <div class="imagem-tras-container">
+          <img src="./images/bg-card-back.png" alt="Imagem Exemplo" class="posicionadab">
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="login-script">
+          <p>CARDHOLDER NAME</p>
+          <p>CARD NUMBER</p>
+          <p>EXP. DATE (MM/YY)</p>
+          <p>CVC</p>
+          <button class="botao">Confirm</button>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+        </div>
+      </div>
 
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    </div>
+    
+  </div>
   </div>
 </body>
 </html>
