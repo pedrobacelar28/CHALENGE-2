@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Space Grotesk', sans-serif; 
+  font-family: 'Space Grotesk', sans-serif;
   color: hsl(278, 94%, 30%);
 }
 
@@ -19,55 +20,104 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-image: url('./images/bg-main-desktop.png'); /* Ajuste o caminho conforme necessário */
+  background-image: url('./images/bg-main-desktop.png');
   background-repeat: no-repeat;
   background-position: left top;
-  background-size: 30% auto; /* Ajusta a largura da imagem */
-  color : hsl(270, 3%, 87%)
+  background-size: 30% auto;
+  color: hsl(270, 3%, 87%);
+}
+.barra-data p{
+  position: absolute;
+  top: 395px;
+  left: 600px;
+  font-family: 'Space Grotesk', sans-serif;
+  color: white;
 }
 .imagem-frente-container {
-  position: relative; /* Contêiner relativo para a imagem */
+  position: relative;
 }
 
 .posicionada {
-  position: absolute; /* Posicionamento absoluto */
-  top: 200px; /* Distância do topo */
-  left: 250px; /* Distância da esquerda */
-  width: 447px; /* Largura da imagem, ajuste conforme necessário */
-  height: auto; /* Manter a proporção da imagem */
+  position: absolute;
+  top: 200px;
+  left: 250px;
+  width: 447px;
+  height: auto;
 }
+
+
 .imagem-tras-container {
-  position: relative; /* Contêiner relativo para a imagem */
+  position: relative;
 }
 
 .posicionadab {
-  position: absolute; /* Posicionamento absoluto */
-  top: 480px; /* Distância do topo */
-  left: 350px; /* Distância da esquerda */
-  width: 447px; /* Largura da imagem, ajuste conforme necessário */
-  height: auto; /* Manter a proporção da imagem */
+  position: absolute;
+  top: 480px;
+  left: 350px;
+  width: 447px;
+  height: auto;
 }
-.right-container {
-  position: absolute; /* Posicionamento absoluto */
-  top: 275px; /* Distância do topo */
-  left: 1000px; /* Distância da esquerda */
-  width: 600px; /* Largura do contêiner, ajuste conforme necessário */
-  height: 500px; /* Altura do contêiner */
-  padding: 10px;
-  border: 1px solid #800080; /* Borda roxa */
-}
-.botao {
-  background-color: hsl(278, 94%, 30%); /* Cor de fundo verde */
-  border: none; /* Remove a borda */
-  color: white; /* Cor do texto branco */
-  padding: 15px 32px; /* Espaçamento interno */
-  text-align: center; /* Alinhamento do texto */
-  text-decoration: none; /* Remove decoração do texto */
-  display: inline-block; /* Permite definir largura e altura */
-  font-size: 16px; /* Tamanho da fonte */
-  margin: 4px 2px; /* Margem externa */
-  cursor: pointer; /* Cursor do mouse */
-  border-radius: 10px; /* Borda arredondada */
-  width: 500px; /* Largura do contêiner, ajuste conforme necessário */
 
+.right-container {
+  position: absolute;
+  top: 275px;
+  left: 1000px;
+  width: 450px;
+  height: 500px;
+  padding: 10px;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  margin-bottom: 35px;
+  padding: 10px;
+  border: 1px solid hsl(278, 94%, 30%);
+  border-radius: 4px;
+}
+
+button {
+  background-color: hsl(278, 94%, 30%);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 430px;
+}
+
+.linha {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.date-row {
+  display: flex;
+  gap: 10px;
+}
+
+.date-row input {
+  flex: 1;
+  margin-bottom: 0;
+  width: 50px;
+}
+

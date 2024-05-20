@@ -8,14 +8,15 @@
   <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Interactive card details form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
+<script src="automatico.js"></script>
+
 <body>
   <div class="main-container">
-    
     <div class="main-content">
+      
       <div class="left-container">
+
         <div class="imagem-frente-container">
           <img src="./images/bg-card-front.png" alt="Imagem Exemplo" class="posicionada">
         </div>
@@ -23,20 +24,44 @@
           <img src="./images/bg-card-back.png" alt="Imagem Exemplo" class="posicionadab">
         </div>
       </div>
-      <div class="right-container">
-        <div class="login-script">
-          <p>CARDHOLDER NAME</p>
-          <p>CARD NUMBER</p>
-          <p>EXP. DATE (MM/YY)</p>
-          <p>CVC</p>
-          <button class="botao">Confirm</button>
-
-        </div>
+      <div class="barra-data">
+        <p>/</p>
       </div>
+      <div class="right-container">
+        <form action="submit_payment.php" method="post">
+          <label for="nome">CARDHOLDER NAME</label>
+          <input type="text" id="nome" name="nome" placeholder="Name" required>
+          <span id="texto-dinamico1"></span>
 
+
+          <label for="cartao">CARD NUMBER</label>
+          <input type="text" id="cartao" name="cartao" placeholder="0000 0000 0000 0000" pattern="\d{16}" required>
+          <span id="texto-dinamico"></span>
+          
+          <div class="linha">
+            <div class="column">
+              <label for="validade">EXP. DATE (MM/YY)</label>
+              <div class="date-row">
+                <input type="text" id="mes" name="mes" placeholder="MM" pattern="\d{2}" required>
+                <span id="texto-dinamico2"></span>
+
+                <input type="text" id="ano" name="ano" placeholder="YY" pattern="\d{2}" required>
+                <span id="texto-dinamico3"></span>
+
+              </div>
+            </div>
+            <div class="column">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" name="cvv" placeholder="000" pattern="\d{3,4}" required>
+              <span id="texto-dinamico4"></span>
+
+            </div>
+          </div>
+
+          <button type="submit">Confirm</button>
+        </form>
+      </div>
     </div>
-    
-  </div>
   </div>
 </body>
 </html>
